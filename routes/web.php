@@ -16,3 +16,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/','UIcontroller@welcome')->name('awal');
+Route::get('/cart','UIcontroller@cart')->name('cart');
+Route::get('/checkout','UIcontroller@cek')->name('checkout');
+Route::get('/product','UIcontroller@produk')->name('produk');
+Route::get('test',function(){
+  return App\produks::with('child')
+  ->where('parent_id',0)
+  ->get();
+});

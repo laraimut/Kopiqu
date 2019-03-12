@@ -11,4 +11,22 @@ class UIcontroller extends Controller
 
 
     }
+
+    public function cart(){
+
+return view('cart');
+
+    }
+
+    public function cek(){
+
+return view('checkout');
+
+    }
+
+    public function produk(){
+
+return view ('product');
+
+    }
 }

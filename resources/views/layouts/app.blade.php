@@ -25,10 +25,10 @@
             </div>
             <nav class="amado-nav">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="product-details.html">Product</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
+                    <li class="active"><a href={{route('awal')}}>Home</a></li>
+                    <li><a href={{route('produk')}}>Product</a></li>
+                    <li><a href={{route('cart')}}>Cart</a></li>
+                    <li><a href={{route('checkout')}}>Checkout</a></li>
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
@@ -65,6 +65,10 @@
                 <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
                 <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
+                <li><a href={{route('cart')}}>Cart</a></li>
+                <li><a href={{route('cart')}}>Cart</a></li>
+
+
             </div>
 
         </header>

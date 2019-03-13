@@ -12,7 +12,7 @@
 
     </div>
 
-  
+
 
           <h1 class="text-monospace">
           Category
@@ -42,7 +42,7 @@
                           <a href="#"><img class="card-img-top" src="img/1.jpg" alt=""></a>
                           <div class="card-body">
                             <h4 class="card-title">
-                              <a href="#">Coffee</a>
+                              
                             </h4>
                             <h5>{{$temp->nama}}</h5>
                             <h5>{{$temp->harga}}</h5>

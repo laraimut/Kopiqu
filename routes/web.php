@@ -26,3 +26,4 @@ Route::post('/addproduk','AdminController@store1')->name('item.produk');
 Route::get('/user','AdminController@user')->name('admin.user');
 Route::post('/addcart','cartcontroller@store')->name('add.cart');
 Route::get('/bayar','UIcontroller@bayar')->name('bayar');
+Route::post('/changestatus','AdminController@change')->name('ganti.status');

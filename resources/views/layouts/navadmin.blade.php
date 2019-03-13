@@ -61,7 +61,7 @@
                         </li>
 
 
-                        <li class="has-sub"><a class="js-arrow" href="{{route('admin.user')}}"><i class="fas fa-copy"></i>User</a> </li>
+                        <li class="has-sub"><a class="js-arrow" href="{{route('admin.user')}}"><i class="fas fa-copy"></i>Transaksi</a> </li>
                         <ul class="list-unstyled navbar__sub-list js-sub-list">
                             <li>
                                 <a href="login.html">Login</a>
@@ -143,10 +143,10 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="images/icon/1.jpg" alt="Jaki" />
+                                            <img src="img/admin.png" alt="Jaki" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">J</a>
+                                            <a class="js-acc-btn" href="#">  {{ Auth::user()->name }}</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">

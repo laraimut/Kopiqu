@@ -34,6 +34,10 @@
                                 <input type="int" id="orangeForm-email" name="idp" class="form-control validate">
                                 <label data-error="wrong" data-success="right" for="orangeForm-email">Id Kategori</label>
                               </div>
+                              <div class="md-form mb-5">
+                                <input type="text" name="ket" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="orangeForm-email">Keterangan</label>
+                              </div>
 
 
 
@@ -77,6 +81,7 @@
 
 
 
+
       </div>
       <div class="modal-footer d-flex justify-content-center">
         <input  type="submit"class="btn btn-deep-orange">
@@ -98,6 +103,7 @@
                                                 <th>No Id</th>
                                                 <th>Nama</th>
                                                 <th>Kategori</th>
+                                                <th>Deskripsi</th>
 
 
                                                 <th class="text-right">price</th>
@@ -110,6 +116,7 @@
                                               <td>{{$temp2->id}}</td>
                                               <td>{{$temp2->nama}}</td>
                                                 <td>{{$temp2->parent_id}}</td>
+                                                  <td>{{$temp2->keterangan}}</td>
                                               <td>{{$temp2->harga}}</td>
 
 

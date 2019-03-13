@@ -21,51 +21,23 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                @foreach ($cartCollection as $item)
                                     <tr>
                                         <td class="cart_product_img">
                                             <a href="#"><img src="img/1.jpg" alt="Product"></a>
                                         </td>
                                         <td class="cart_product_desc">
-                                            <h5>Americano</h5>
+                                            <h5>{{$item->name}}</h5>
                                         </td>
                                         <td class="price">
-                                            <span>Rp 25.000</span>
+                                            <span>{{$item->price}}</span>
                                         </td>
                                         <td class="weight">
-                                            <span>2 Kg</span>
+                                            <span>{{$item->quantity}} Kg</span>
                                         </td>
 
                                     </tr>
-                                    <tr>
-                                        <td class="cart_product_img">
-                                            <a href="#"><img src="img/matcha.jpg" alt="Product"></a>
-                                        </td>
-                                        <td class="cart_product_desc">
-                                            <h5>Matcha Latte</h5>
-                                        </td>
-                                        <td class="price">
-                                            <span>Rp 45.000</span>
-                                        </td>
-                                        <td class="weight">
-                                            <span>2 Kg</span>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="cart_product_img">
-                                            <a href="#"><img src="img/luwak.jpeg" alt="Product"></a>
-                                        </td>
-                                        <td class="cart_product_desc">
-                                            <h5>Ice Tea</h5>
-                                        </td>
-                                        <td class="price">
-                                            <span>Rp 20.000</span>
-                                        </td>
-                                        <td class="weight">
-                                            <span>2 Kg</span>
-                                        </td>
-
-                                    </tr>
+@endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -74,9 +46,9 @@
                         <div class="cart-summary">
                             <h5>Cart Total</h5>
                             <ul class="summary-table">
-                                <li><span>subtotal:</span> <span>Rp 90.000</span></li>
-                                <li><span>delivery:</span> <span>Rp 20.000</span></li>
-                                <li><span>total:</span> <span>Rp 90.000</span></li>
+                                <li><span>subtotal:</span> <span>Rp {{$subTotal}}</span></li>
+                                <li><span>delivery:</span> <span>Rp {{$cartTotalQuantity * 5000}}</span></li>
+                                <li><span>total:</span> <span>Rp {{$subTotal + $cartTotalQuantity * 5000}}  </span></li>
                             </ul>
                             <div class="cart-btn mt-100">
                                 <a href="cart.html" class="btn amado-btn w-100">Checkout</a>

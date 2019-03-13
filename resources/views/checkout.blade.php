@@ -70,9 +70,9 @@
                         <div class="cart-summary">
                             <h5>Cart Total</h5>
                             <ul class="summary-table">
-                                <li><span>subtotal:</span> <span>Rp 0</span></li>
-                                <li><span>delivery:</span> <span>Rp 0</span></li>
-                                <li><span>total:</span> <span>Rp 0</span></li>
+                                <li><span>subtotal:</span> <span>Rp {{$subTotall}}</span></li>
+                                <li><span>delivery:</span> <span>Rp {{$cartTotalQuantity * 5000}}</span></li>
+                                <li><span>total:</span> <span>Rp {{$subTotall + $cartTotalQuantity * 5000}}  </span></li>
                             </ul>
 
                             <div class="payment-method">
@@ -87,7 +87,7 @@
                             </div>
 
                             <div class="cart-btn mt-100">
-                                <a href="#" class="btn amado-btn w-100">Checkout</a>
+                                <a href="{{route('bayar')}}" class="btn amado-btn w-100">Checkout</a>
                             </div>
                         </div>
                     </div>

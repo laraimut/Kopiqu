@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Auth;
+
 
 class CreateProduksTable extends Migration
 {
@@ -16,8 +16,11 @@ class CreateProduksTable extends Migration
     {
         Schema::create('produks', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_kategori');
-            $table->integer('parent_id');
+            $table->string('nama');
+            $table->integer('parent_id')->nullable();
+            $table->integer('harga');
+            $table->string('image');
+            $table->string('keterangan');
             $table->timestamps();
         });
     }

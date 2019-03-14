@@ -18,8 +18,8 @@ class CreateProduksTable extends Migration
             $table->bigIncrements('id');
             $table->string('nama');
             $table->integer('parent_id')->nullable();
-            $table->integer('harga');
-            $table->string('image');
+            $table->integer('harga')->nullable();
+            $table->string('image')->nullable();
             $table->string('keterangan');
             $table->timestamps();
         });

@@ -12,7 +12,8 @@
                                 <h2>Checkout</h2>
                             </div>
 
-                            <form action="#" method="post">
+                            <form method="post" action="{{route('addTransaksi')}}" >
+                              @csrf
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <input type="text" class="form-control" id="first_name" value="" placeholder="First Name" required>
@@ -39,7 +40,7 @@
                                     </select>
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <input type="text" class="form-control mb-3" id="street_address" placeholder="Address" value="">
+                                        <input type="text" class="form-control mb-3" name="alamat" placeholder="Address" value="">
                                     </div>
 
                                     <div class="col-md-6 mb-3">
@@ -63,7 +64,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
@@ -87,9 +88,10 @@
                             </div>
 
                             <div class="cart-btn mt-100">
-                                <a href="{{route('bayar')}}" class="btn amado-btn w-100">Checkout</a>
+                                <input type="submit" href="{{route('bayar')}}" class="btn amado-btn w-100"></a>
                             </div>
                         </div>
+                          </form>
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@
                               </button>
                             </div>
                             <div class="modal-body mx-3">
-                          <form method="post" action="{{route('item.produk')}}">
+                          <form method="post" action="{{route('item.produk')}}" enctype="multipart/form-data">
                               @csrf
 
                             <div class="md-form mb-5">
@@ -37,8 +37,13 @@
                               <div class="md-form mb-5">
                                 <input type="text" name="ket" class="form-control validate">
                                 <label data-error="wrong" data-success="right" for="orangeForm-email">Keterangan</label>
-                              </div>
+                              </div>    <div class="md-form mb-5">
+                              <p class="text-primary">Tambah foto</p>
 
+                                    <input placeholder="Tambah Foto" type="file" name="tambahfoto" accept="image/*">
+                                    <input type="submit" class="btn btn-primary-outline"  value="submit">
+
+</div>
 
 
                             </div>

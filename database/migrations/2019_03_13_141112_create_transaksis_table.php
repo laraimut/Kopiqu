@@ -16,9 +16,10 @@ class CreateTransaksisTable extends Migration
         Schema::create('transaksis', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('total');
-            $table->string('nama');
+            $table->integer('jumlahBarang');
             $table->integer('iduser');
             $table->string('status');
+            $table->string('alamat')->nullable();
             $table->timestamps();
         });
     }
